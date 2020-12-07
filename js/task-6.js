@@ -13,7 +13,10 @@ do {
     numbers.push(input);
 } while (input !== null);
 
-for (const elements of numbers) {
-    total += Number(elements);
+if (numbers.length) {
+    for (const elements of numbers) {
+        total += Number(elements);
+    }
 }
+
 alert(`Общая сумма чисел равна ${total}`);

@@ -11,11 +11,11 @@ buttonRef.addEventListener('click', function () {
 
     const addLogin = function (allLogins, login) {
         
-        if (isLoginValid(login) === false) {
+        if (!isLoginValid(login)) {
             return 'Ошибка! Логин должен быть от 4 до 16 символов';
         }
 
-        if (isLoginIn(allLogins, login) === true) {
+        if (isLoginIn(allLogins, login)) {
             return 'Такой логин уже используется!';
         }
 
